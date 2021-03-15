@@ -2,7 +2,9 @@
 Create ics calendars with dynamic repeating events.
 
 ## Usage
-`adversary [-h] [-t T] [-d D] [-f OUT] namepattern startdate count {year, month, day}`
+```
+adversary [-h] [-t T] [-d D] [-f OUT] namepattern startdate count {year, month, day}
+```
 
 ### Substitution Rules
 
@@ -35,12 +37,12 @@ as {} which are swapped out for event-specific fields. More details are provided
 ## Examples 
 Show the age of a child born on the 10th of March 1998 each year for 20 years.
 ```bash
-adversary -f birthdays.ics "{} Year{s} Old" "10/03/1998" 20 year`
+adversary -f birthdays.ics "{} Year{s} Old" "10/03/1998" 20 year
 ```
 
 Show each mensiversary of moving into a new house on the 2nd of January 2015.
 ```bash
-adversary -f move-in.ics "{}{st} Mensiversary of Moving In" "02/01/2015" 30 month`
+adversary -f move-in.ics "{}{st} Mensiversary of Moving In" "02/01/2015" 30 month
 ```
 
 ## Building
